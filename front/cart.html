@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Panier ours en peluche</title> 
+        <link rel="stylesheet" href="./style.css">  
+        <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bitter:700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/400446fb93.js" crossorigin="anonymous"></script>
+        <script src="cart.js" async></script>        
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./img/orinoco_logo.png" alt="logo">
+                <a href="./index.html"><h1>Orinoco-ourson</h1></a>                
+            </div>
+            <a href="./cart.html"><i class="fas fa-shopping-basket"></i></a>
+        </header>
+
+        <main>
+            <a href="./index.html">Retour à l'accueil</a>
+            <h2>Détail de votre panier</h2>
+            <section id="cart">
+                <h3 id="cart-total"></h3>                
+            </section>
+            <div class="container">
+                <form>
+                    <label for="firstName">Prénom : </label>
+                    <input type="text" id="firstName" name="firstName">
+                    <p id="firstNameErrorMessage" class="form-error"></p>
+
+                    <label for="lastName">Nom : </label>
+                    <input type="text" id="lastName" name="lastName">
+                    <p id="lastNameErrorMessage" class="form-error"></p>
+
+                    <label for="address">Adresse : </label>
+                    <input type="text" id="address" name="address">
+                    <p id="addressErrorMessage" class="form-error"></p>
+
+                    <label for="city">Ville : </label>
+                    <input type="text" id="city" name="city">
+                    <p id="cityErrorMessage" class="form-error"></p>
+
+                    <label for="email">Email : </label>
+                    <input type="email" id="email" name="email">
+                    <p id="emailErrorMessage" class="form-error"></p>
+
+                    <input type="submit" id="btn" value="Valider">
+                </form>                
+            </div>
+        </main>
+
+    </body>
+</html>
